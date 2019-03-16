@@ -1,0 +1,35 @@
+.menu-button {
+  width: 55px;
+  height: 55px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-button span {
+  width: 18px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu-button span::before,
+.menu-button span::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: absolute;
+}
+
+.menu-button span::before {
+  top: -6px;
+}
+
+.menu-button span::after {
+  top: 6px;
+}

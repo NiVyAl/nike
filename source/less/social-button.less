@@ -1,0 +1,30 @@
+.social-button {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.social-button:hover {
+  background-color: white;
+}
+
+.social-button::before {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  //border-radius: 50%;
+}
+
+.social-button:hover::before {
+  background-color: @green;
+}
